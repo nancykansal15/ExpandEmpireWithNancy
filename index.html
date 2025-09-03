@@ -94,3 +94,48 @@
             <li>Lifetime Community Access</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Connect with Nancy Kansal on social media or send a message directly!</p>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/nancykansal.nk/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram"></a>
+      <a href="https://www.facebook.com/share/1BmPn8YfBd/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></a>
+      <a href="mailto:nancykansal.nk@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail"></a>
+      <a href="https://www.linkedin.com/in/nancy-kansal-8b4b312b7" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+      <a href="https://x.com/nancykansal15?s=21" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="X"></a>
+      <a href="https://wa.me/919996119746" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
+    </div>
+
+    <p style="margin-top:20px;">Or send a direct message to 
+      <a href="mailto:nancykansal.nk@gmail.com">nancykansal.nk@gmail.com</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Expand Empire With Nancy | All Rights Reserved</p>
+  </footer>
+
+  <!-- Accordion Script -->
+  <script>
+    const accBtns = document.querySelectorAll(".accordion-btn");
+    accBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        let content = btn.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
