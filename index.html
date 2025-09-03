@@ -5,13 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expand Empire With Nancy</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra styles for Courses */
+    .course-card {
+      background:#f9f9f9;
+      border-radius:10px;
+      padding:20px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      text-align:left;
+      transition: transform 0.3s;
+    }
+    .course-card:hover {
+      transform: translateY(-8px);
+    }
+    .course-card h3 {
+      margin-bottom:10px;
+      color:#002855;
+    }
+    .course-card p {
+      margin-bottom:10px;
+      font-size:0.95rem;
+      color:#555;
+    }
+    .modules {
+      margin-top:10px;
+      padding-left:20px;
+    }
+    .modules li {
+      margin-bottom:6px;
+      font-size:0.95rem;
+      color:#333;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
   <nav>
     <a href="#">Home</a>
     <a href="#about">About</a>
-    <a href="#services">Services</a>
     <a href="#courses">Courses</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -41,136 +72,124 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <span class="icon">🚀</span>
-        <h3>Social Media Marketing</h3>
-        <p>Grow your brand with engaging content & audience-focused strategies.</p>
-      </div>
-      <div class="card">
-        <span class="icon">📈</span>
-        <h3>Meta Ads & Campaigns</h3>
-        <p>Run high-converting ad campaigns to boost leads & sales.</p>
-      </div>
-      <div class="card">
-        <span class="icon">🎯</span>
-        <h3>Lead Generation</h3>
-        <p>Attract the right customers with targeted strategies.</p>
-      </div>
-      <div class="card">
-        <span class="icon">🤝</span>
-        <h3>Personal Mentorship By Krishna Arora</h3>
-        <p>Personal guidance to help you build a strong business mindset.</p>
-      </div>
-      <div class="card">
-        <span class="icon">🌿</span>
-        <h3>Forever Living Products</h3>
-        <p>Promoting health, wellness & financial independence together.</p>
-      </div>
-    </div>
-    <a href="https://forms.gle/z57iJZKhzG6MLKJp9" target="_blank" class="btn">Get Started Today</a>
-  </section>
-
-  <!-- Courses Section -->
-  <section id="courses" style="padding:50px 20px; background:#fff; text-align:center;">
+  <!-- Courses Section with Modules -->
+  <section id="courses" style="padding:60px 20px; background:#fff; text-align:center;">
     <h2 style="font-size:2rem; margin-bottom:30px; color:#002855;">📘 Our Courses</h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;">
 
-      <div style="background:#f9f9f9; border-radius:10px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px;">
+
+      <!-- Course 1 -->
+      <div class="course-card">
         <h3>🚀 Digital Marketing Mastery</h3>
         <p>Learn social media growth, ads, and lead generation step by step.</p>
+        <h4 style="margin-top:15px; color:#003366;">Modules Included:</h4>
+        <ul class="modules">
+          <li>Module 1 – Basics of Digital Marketing</li>
+          <li>Module 2 – Social Media Growth Hacks</li>
+          <li>Module 3 – Running Effective Ad Campaigns</li>
+          <li>Module 4 – Scaling & Analytics</li>
+        </ul>
       </div>
 
-      <div style="background:#f9f9f9; border-radius:10px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+      <!-- Course 2 -->
+      <div class="course-card">
         <h3>📈 Meta Ads Bootcamp</h3>
         <p>Master campaign creation, targeting & scaling to boost ROI.</p>
+        <h4 style="margin-top:15px; color:#003366;">Modules Included:</h4>
+        <ul class="modules">
+          <li>Module 1 – Campaign Setup</li>
+          <li>Module 2 – Audience Targeting</li>
+          <li>Module 3 – Budget Optimization</li>
+          <li>Module 4 – Tracking & Reporting</li>
+        </ul>
       </div>
 
-      <div style="background:#f9f9f9; border-radius:10px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+      <!-- Course 3 -->
+      <div class="course-card">
         <h3>🎯 Lead Generation Secrets</h3>
         <p>Strategies to attract high-quality leads that convert into sales.</p>
+        <h4 style="margin-top:15px; color:#003366;">Modules Included:</h4>
+        <ul class="modules">
+          <li>Module 1 – Customer Psychology</li>
+          <li>Module 2 – Building Funnels</li>
+          <li>Module 3 – High-Converting Copywriting</li>
+          <li>Module 4 – Lead Nurturing Techniques</li>
+        </ul>
       </div>
 
-      <div style="background:#f9f9f9; border-radius:10px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+      <!-- Course 4 -->
+      <div class="course-card">
         <h3>🤝 Mentorship Program</h3>
         <p>1-on-1 mentorship with Nancy for business growth & mindset.</p>
+        <h4 style="margin-top:15px; color:#003366;">Modules Included:</h4>
+        <ul class="modules">
+          <li>Module 1 – Entrepreneurial Mindset</li>
+          <li>Module 2 – Personal Branding</li>
+          <li>Module 3 – Scaling Strategies</li>
+          <li>Module 4 – Long-Term Success Plan</li>
+        </ul>
       </div>
 
     </div>
-    <a href="https://forms.gle/z57iJZKhzG6MLKJp9" target="_blank" class="btn" style="margin-top:30px; display:inline-block;">Enroll Now</a>
+
+    <a href="https://forms.gle/z57iJZKhzG6MLKJp9" target="_blank" class="btn" style="margin-top:40px; display:inline-block;">Enroll Now</a>
   </section>
 
-<!-- Contact Us Section with Uniform Real Icons -->
-<section id="contact" style="padding: 60px 20px; background-color: #f9f9f9; text-align: center; font-family: Arial, sans-serif;">
-  <h2 style="font-size: 38px; margin-bottom: 15px;">Contact Us</h2>
-  <p style="font-size: 18px; margin-bottom: 40px; color: #555;">Connect with Nancy Kansal on social media or send a message directly!</p>
+  <!-- Contact Us Section -->
+  <section id="contact" style="padding: 60px 20px; background-color: #f9f9f9; text-align: center; font-family: Arial, sans-serif;">
+    <h2 style="font-size: 38px; margin-bottom: 15px;">Contact Us</h2>
+    <p style="font-size: 18px; margin-bottom: 40px; color: #555;">Connect with Nancy Kansal on social media or send a message directly!</p>
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/nancykansal.nk/" target="_blank" style="text-decoration: none;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#E1306C; display:flex; align-items:center; justify-content:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style="width:30px; height:30px;">
+        </div>
+      </a>
 
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/nancykansal.nk/" target="_blank" style="text-decoration: none;">
-      <div style="width:60px; height:60px; border-radius:50%; background:#E1306C; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style="width:30px; height:30px;">
-      </div>
-    </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/1BmPn8YfBd/" target="_blank" style="text-decoration: none;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#3b5998; display:flex; align-items:center; justify-content:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" style="width:30px; height:30px;">
+        </div>
+      </a>
 
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/share/1BmPn8YfBd/" target="_blank" style="text-decoration: none;">
-      <div style="width:60px; height:60px; border-radius:50%; background:#3b5998; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" style="width:30px; height:30px;">
-      </div>
-    </a>
+      <!-- Gmail -->
+      <a href="mailto:nancykansal.nk@gmail.com" style="text-decoration: none;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#D44638; display:flex; align-items:center; justify-content:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" style="width:30px; height:30px;">
+        </div>
+      </a>
 
-    <!-- Gmail -->
-    <a href="mailto:nancykansal.nk@gmail.com" style="text-decoration: none;">
-      <div style="width:60px; height:60px; border-radius:50%; background:#D44638; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" style="width:30px; height:30px;">
-      </div>
-    </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/nancy-kansal-8b4b312b7" target="_blank" style="text-decoration: none;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#0077b5; display:flex; align-items:center; justify-content:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width:30px; height:30px;">
+        </div>
+      </a>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/nancy-kansal-8b4b312b7" target="_blank" style="text-decoration: none;">
-      <div style="width:60px; height:60px; border-radius:50%; background:#0077b5; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width:30px; height:30px;">
-      </div>
-    </a>
+      <!-- X -->
+      <a href="https://x.com/nancykansal15?s=21" target="_blank" style="text-decoration: none;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#1DA1F2; display:flex; align-items:center; justify-content:center;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.954 4.569a10 10 0 0 1-2.825.775 4.932 4.932 0 0 0 2.163-2.723 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.94 13.94 0 0 1 1.671 3.149a4.822 4.822 0 0 0-.666 2.475c0 1.708.869 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616v.06a4.924 4.924 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.224.085 4.928 4.928 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.104c-.395 0-.779-.023-1.158-.067a13.945 13.945 0 0 0 7.557 2.212c9.054 0 14.002-7.496 14.002-13.986 0-.21 0-.423-.015-.634a9.935 9.935 0 0 0 2.457-2.548l.002-.003z"/>
+          </svg>
+        </div>
+      </a>
 
-    <!-- X (Real SVG) -->
-    <a href="https://x.com/nancykansal15?s=21" target="_blank" style="text-decoration: none;">
-      <div style="width:60px; height:60px; border-radius:50%; background:#1DA1F2; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.954 4.569a10 10 0 0 1-2.825.775 4.932 4.932 0 0 0 2.163-2.723 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.94 13.94 0 0 1 1.671 3.149a4.822 4.822 0 0 0-.666 2.475c0 1.708.869 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616v.06a4.924 4.924 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.224.085 4.928 4.928 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.104c-.395 0-.779-.023-1.158-.067a13.945 13.945 0 0 0 7.557 2.212c9.054 0 14.002-7.496 14.002-13.986 0-.21 0-.423-.015-.634a9.935 9.935 0 0 0 2.457-2.548l.002-.003z"/>
-        </svg>
-      </div>
-    </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/919996119746" target="_blank" style="text-decoration: none;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:30px; height:30px;">
+        </div>
+      </a>
+    </div>
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/YOUR_NUMBER_HERE" target="_blank" style="text-decoration: none;">
-      <div style="width:60px; height:60px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:30px; height:30px;">
-      </div>
-    </a>
-
-  </div>
-
-  <p style="margin-top: 40px; font-size: 16px; color: #555;">
-    Or send a direct message to <a href="mailto:nancykansal.nk@gmail.com" style="color: #D44638;">nancykansal.nk@gmail.com</a>
-  </p>
-</section>
-
-<!-- Hover effect CSS -->
-<style>
-  #contact a div:hover {
-    transform: scale(1.15);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-  }
-</style>
-
-<!-- Font Awesome CDN for icons (put this in <head> of your HTML) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <p style="margin-top: 40px; font-size: 16px; color: #555;">
+      Or send a direct message to <a href="mailto:nancykansal.nk@gmail.com" style="color: #D44638;">nancykansal.nk@gmail.com</a>
+    </p>
+  </section>
 
   <!-- Footer -->
   <footer>
