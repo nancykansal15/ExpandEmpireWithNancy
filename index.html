@@ -5,74 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expand Empire With Nancy</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Accordion Styles */
-    .course-section {
-      padding: 50px 20px;
-      background: #f9f9f9;
-      text-align: center;
-    }
-    .course-section h2 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #002855;
-    }
-    .course-card {
-      background: #fff;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 90%;
-      max-width: 700px;
-      text-align: left;
-    }
-    .course-card h3 {
-      color: #003f7f;
-      margin-bottom: 10px;
-    }
-    .accordion-btn {
-      background: #002855;
-      color: #fff;
-      cursor: pointer;
-      padding: 14px;
-      width: 100%;
-      border: none;
-      outline: none;
-      text-align: left;
-      font-size: 1rem;
-      margin: 5px 0;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-    .accordion-btn:hover {
-      background: #003f7f;
-    }
-    .accordion-btn.active {
-      background: #ffcc00;
-      color: #002855;
-    }
-    .accordion-panel {
-      background: #f4f8fb;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-out;
-      border-left: 3px solid #002855;
-      padding: 0 10px;
-      border-radius: 0 0 5px 5px;
-    }
-    .accordion-panel p {
-      margin: 10px 0;
-      padding: 5px;
-      font-size: 0.95rem;
-      color: #333;
-    }
-  </style>
 </head>
 <body>
+
   <!-- Navigation -->
   <nav>
-    <a href="#">Home</a>
     <a href="#about">About</a>
     <a href="#courses">Courses</a>
     <a href="#contact">Contact</a>
@@ -80,105 +17,125 @@
 
   <!-- Hero Section -->
   <header>
-    <h1 class="hero-title">EXPAND EMPIRE WITH NANCY</h1>
-    <p>Building a society of <b>Young Entrepreneurs</b> with <b>Achievers Club</b> & empowering people through <b>Digital Marketing</b>.</p>
-    <a href="https://forms.gle/z57iJZKhzG6MLKJp9" target="_blank" class="btn">JOIN THE JOURNEY</a>
-    <a href="https://wa.me/919996119746" target="_blank" class="btn whatsapp">Chat on WhatsApp</a>
+    <h1 class="hero-title">Expand Empire With Nancy</h1>
+    <p>Learn Digital Marketing, Meta Ads & Lead Generation To Grow Your Business 🚀</p>
+    <a href="#courses" class="btn">Explore Courses</a>
+    <a href="https://wa.me/919999999999" class="btn whatsapp">Chat on WhatsApp</a>
   </header>
 
   <!-- About Section -->
   <section id="about" class="about">
-    <h2>✨ About Us ✨</h2>
+    <h2>About Me</h2>
     <div class="about-container">
       <div class="about-card">
-        <span class="icon">🤝</span>
-        <h3>Achievers Club</h3>
-        <p>A vibrant community of ambitious leaders & dreamers, building financial independence together.</p>
+        <div class="icon">💡</div>
+        <h3>Entrepreneur</h3>
+        <p>Helping businesses grow online with strategies that work.</p>
       </div>
       <div class="about-card">
-        <span class="icon">💻</span>
-        <h3>Digital Marketing</h3>
-        <p>Effective strategies to expand your influence, grow your business & achieve abundance.</p>
+        <div class="icon">📊</div>
+        <h3>Digital Marketer</h3>
+        <p>Expert in Meta Ads, Lead Generation & Social Media Marketing.</p>
+      </div>
+      <div class="about-card">
+        <div class="icon">🎯</div>
+        <h3>Mentor</h3>
+        <p>Guiding aspiring marketers to achieve success.</p>
       </div>
     </div>
   </section>
 
   <!-- Courses Section -->
-  <section id="courses" class="course-section">
-    <h2>📚 Our Courses</h2>
+  <section id="courses" class="courses">
+    <h2>Our Courses</h2>
+    <div class="courses-container">
 
-    <!-- Course 1 -->
-    <div class="course-card">
-      <h3>🚀 Digital Marketing Mastery</h3>
-      <p>Learn social media growth, ads, and lead generation step by step.</p>
-      <button class="accordion-btn">Module 1 – Basics of Digital Marketing</button>
-      <div class="accordion-panel"><p>Introduction to marketing, online presence, and tools.</p></div>
+      <!-- Course 1 -->
+      <div class="course-card">
+        <h3>🚀 Digital Marketing Mastery</h3>
+        <p>Learn social media growth, ads, and lead generation step by step.</p>
+        <h4>Modules Included:</h4>
+        <div class="accordion">
+          <button class="accordion-btn">Module 1 – Basics of Digital Marketing</button>
+          <div class="accordion-panel">
+            <p>Introduction to marketing, online presence, and tools.</p>
+          </div>
 
-      <button class="accordion-btn">Module 2 – Social Media Growth Hacks</button>
-      <div class="accordion-panel"><p>Strategies to grow Instagram, Facebook, and LinkedIn.</p></div>
+          <button class="accordion-btn">Module 2 – Social Media Growth Hacks</button>
+          <div class="accordion-panel">
+            <p>Strategies to grow Instagram, Facebook, and LinkedIn.</p>
+          </div>
 
-      <button class="accordion-btn">Module 3 – Running Effective Ad Campaigns</button>
-      <div class="accordion-panel"><p>How to set up campaigns, test creatives, and optimize ads.</p></div>
+          <button class="accordion-btn">Module 3 – Running Effective Ad Campaigns</button>
+          <div class="accordion-panel">
+            <p>How to set up campaigns, creatives, and optimization.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="course-card">
+        <h3>📣 Meta Ads Bootcamp</h3>
+        <p>Master Facebook & Instagram Ads to generate high-quality leads.</p>
+        <h4>Modules Included:</h4>
+        <div class="accordion">
+          <button class="accordion-btn">Module 1 – Introduction to Meta Ads</button>
+          <div class="accordion-panel">
+            <p>Business manager setup, ad policies, account structure.</p>
+          </div>
+          <button class="accordion-btn">Module 2 – Campaign Setup</button>
+          <div class="accordion-panel">
+            <p>Creating ad sets, audience targeting, and placements.</p>
+          </div>
+          <button class="accordion-btn">Module 3 – Optimization</button>
+          <div class="accordion-panel">
+            <p>Scaling ads, tracking, and analytics.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="course-card">
+        <h3>🎯 Lead Generation Secrets</h3>
+        <p>Get consistent leads online using strategies that work in 2025.</p>
+        <h4>Modules Included:</h4>
+        <div class="accordion">
+          <button class="accordion-btn">Module 1 – Lead Funnels</button>
+          <div class="accordion-panel">
+            <p>Landing pages, offers, and automation.</p>
+          </div>
+          <button class="accordion-btn">Module 2 – Ads for Leads</button>
+          <div class="accordion-panel">
+            <p>Targeting, creatives, and lead form setup.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="course-card">
+        <h3>🤝 1-on-1 Mentorship Program</h3>
+        <p>Work directly with me to build your marketing career or business.</p>
+        <h4>Modules Included:</h4>
+        <div class="accordion">
+          <button class="accordion-btn">Module 1 – Personalized Roadmap</button>
+          <div class="accordion-panel">
+            <p>Clear goals and step-by-step action plan.</p>
+          </div>
+          <button class="accordion-btn">Module 2 – Live Sessions</button>
+          <div class="accordion-panel">
+            <p>Weekly 1:1 coaching calls & assignments.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-    <!-- Course 2 -->
-    <div class="course-card">
-      <h3>🎯 Lead Generation Blueprint</h3>
-      <p>Attract the right audience and convert them into high-quality leads.</p>
-      <button class="accordion-btn">Module 1 – Building Funnels</button>
-      <div class="accordion-panel"><p>Step-by-step process to create sales funnels that convert.</p></div>
-
-      <button class="accordion-btn">Module 2 – Organic vs Paid Leads</button>
-      <div class="accordion-panel"><p>Differentiate between lead sources and maximize ROI.</p></div>
-
-      <button class="accordion-btn">Module 3 – Automation Secrets</button>
-      <div class="accordion-panel"><p>Automate follow-ups, emails, and chats for efficiency.</p></div>
-    </div>
-
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" style="padding: 60px 20px; background-color: #f9f9f9; text-align: center; font-family: Arial, sans-serif;">
-    <h2 style="font-size: 38px; margin-bottom: 15px;">Contact Us</h2>
-    <p style="font-size: 18px; margin-bottom: 40px; color: #555;">Connect with Nancy Kansal on social media or send a message directly!</p>
-
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/nancykansal.nk/" target="_blank" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#E1306C; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style="width:30px; height:30px;">
-        </div>
-      </a>
-
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/share/1BmPn8YfBd/" target="_blank" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#3b5998; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" style="width:30px; height:30px;">
-        </div>
-      </a>
-
-      <!-- Gmail -->
-      <a href="mailto:nancykansal.nk@gmail.com" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#D44638; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" style="width:30px; height:30px;">
-        </div>
-      </a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/nancy-kansal-8b4b312b7" target="_blank" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#0077b5; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width:30px; height:30px;">
-        </div>
-      </a>
-
-      <!-- WhatsApp -->
-      <a href="https://wa.me/919996119746" target="_blank" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:30px; height:30px;">
-        </div>
-      </a>
-    </div>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: nancy@example.com</p>
+    <p>📱 Phone: +91-9999999999</p>
   </section>
 
   <!-- Footer -->
@@ -201,5 +158,6 @@
       });
     });
   </script>
+
 </body>
 </html>
