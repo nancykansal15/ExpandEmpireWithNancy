@@ -6,35 +6,66 @@
   <title>Expand Empire With Nancy</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Extra styles for Courses */
-    .course-card {
-      background:#f9f9f9;
-      border-radius:10px;
-      padding:20px;
-      box-shadow:0 4px 8px rgba(0,0,0,0.1);
-      text-align:left;
-      transition: transform 0.3s;
+    /* Accordion Styles */
+    .course-section {
+      padding: 50px 20px;
+      background: #f9f9f9;
+      text-align: center;
     }
-    .course-card:hover {
-      transform: translateY(-8px);
+    .course-section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #002855;
+    }
+    .course-card {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 700px;
+      text-align: left;
     }
     .course-card h3 {
-      margin-bottom:10px;
-      color:#002855;
+      color: #003f7f;
+      margin-bottom: 10px;
     }
-    .course-card p {
-      margin-bottom:10px;
-      font-size:0.95rem;
-      color:#555;
+    .accordion-btn {
+      background: #002855;
+      color: #fff;
+      cursor: pointer;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      font-size: 1rem;
+      margin: 5px 0;
+      border-radius: 5px;
+      transition: 0.3s;
     }
-    .modules {
-      margin-top:10px;
-      padding-left:20px;
+    .accordion-btn:hover {
+      background: #003f7f;
     }
-    .modules li {
-      margin-bottom:6px;
-      font-size:0.95rem;
-      color:#333;
+    .accordion-btn.active {
+      background: #ffcc00;
+      color: #002855;
+    }
+    .accordion-panel {
+      background: #f4f8fb;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      border-left: 3px solid #002855;
+      padding: 0 10px;
+      border-radius: 0 0 5px 5px;
+    }
+    .accordion-panel p {
+      margin: 10px 0;
+      padding: 5px;
+      font-size: 0.95rem;
+      color: #333;
     }
   </style>
 </head>
@@ -72,128 +103,103 @@
     </div>
   </section>
 
-  <!-- Courses Section with Modules -->
-  <section id="courses" style="padding:60px 20px; background:#fff; text-align:center;">
-    <h2 style="font-size:2rem; margin-bottom:30px; color:#002855;">📘 Our Courses</h2>
+  <!-- Courses Section -->
+  <section id="courses" class="course-section">
+    <h2>📚 Our Courses</h2>
 
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px;">
+    <!-- Course 1 -->
+    <div class="course-card">
+      <h3>🚀 Digital Marketing Mastery</h3>
+      <p>Learn social media growth, ads, and lead generation step by step.</p>
+      <button class="accordion-btn">Module 1 – Basics of Digital Marketing</button>
+      <div class="accordion-panel"><p>Introduction to marketing, online presence, and tools.</p></div>
 
-      <!-- Course 1 -->
-      <div class="course-card">
-        <h3>🚀 Digital Marketing Mastery</h3>
-        <p>Learn social media growth, ads, and lead generation step by step.</p>
-        <h4 style="margin-top:15px; color:#003366;">Modules Included:</h4>
-        <ul class="modules">
-          <li>Module 1 – Basics of Digital Marketing</li>
-          <li>Module 2 – Social Media Growth Hacks</li>
-          <li>Module 3 – Running Effective Ad Campaigns</li>
-          <li>Module 4 – Scaling & Analytics</li>
-        </ul>
-      </div>
+      <button class="accordion-btn">Module 2 – Social Media Growth Hacks</button>
+      <div class="accordion-panel"><p>Strategies to grow Instagram, Facebook, and LinkedIn.</p></div>
 
-      <!-- Course 2 -->
-      <div class="course-card">
-        <h3>📈 Meta Ads Bootcamp</h3>
-        <p>Master campaign creation, targeting & scaling to boost ROI.</p>
-        <h4 style="margin-top:15px; color:#003366;">Modules Included:</h4>
-        <ul class="modules">
-          <li>Module 1 – Campaign Setup</li>
-          <li>Module 2 – Audience Targeting</li>
-          <li>Module 3 – Budget Optimization</li>
-          <li>Module 4 – Tracking & Reporting</li>
-        </ul>
-      </div>
-
-      <!-- Course 3 -->
-      <div class="course-card">
-        <h3>🎯 Lead Generation Secrets</h3>
-        <p>Strategies to attract high-quality leads that convert into sales.</p>
-        <h4 style="margin-top:15px; color:#003366;">Modules Included:</h4>
-        <ul class="modules">
-          <li>Module 1 – Customer Psychology</li>
-          <li>Module 2 – Building Funnels</li>
-          <li>Module 3 – High-Converting Copywriting</li>
-          <li>Module 4 – Lead Nurturing Techniques</li>
-        </ul>
-      </div>
-
-      <!-- Course 4 -->
-      <div class="course-card">
-        <h3>🤝 Mentorship Program</h3>
-        <p>1-on-1 mentorship with Nancy for business growth & mindset.</p>
-        <h4 style="margin-top:15px; color:#003366;">Modules Included:</h4>
-        <ul class="modules">
-          <li>Module 1 – Entrepreneurial Mindset</li>
-          <li>Module 2 – Personal Branding</li>
-          <li>Module 3 – Scaling Strategies</li>
-          <li>Module 4 – Long-Term Success Plan</li>
-        </ul>
-      </div>
-
+      <button class="accordion-btn">Module 3 – Running Effective Ad Campaigns</button>
+      <div class="accordion-panel"><p>How to set up campaigns, test creatives, and optimize ads.</p></div>
     </div>
 
-    <a href="https://forms.gle/z57iJZKhzG6MLKJp9" target="_blank" class="btn" style="margin-top:40px; display:inline-block;">Enroll Now</a>
+    <!-- Course 2 -->
+    <div class="course-card">
+      <h3>🎯 Lead Generation Blueprint</h3>
+      <p>Attract the right audience and convert them into high-quality leads.</p>
+      <button class="accordion-btn">Module 1 – Building Funnels</button>
+      <div class="accordion-panel"><p>Step-by-step process to create sales funnels that convert.</p></div>
+
+      <button class="accordion-btn">Module 2 – Organic vs Paid Leads</button>
+      <div class="accordion-panel"><p>Differentiate between lead sources and maximize ROI.</p></div>
+
+      <button class="accordion-btn">Module 3 – Automation Secrets</button>
+      <div class="accordion-panel"><p>Automate follow-ups, emails, and chats for efficiency.</p></div>
+    </div>
+
   </section>
 
-  <!-- Contact Us Section -->
+  <!-- Contact Section -->
   <section id="contact" style="padding: 60px 20px; background-color: #f9f9f9; text-align: center; font-family: Arial, sans-serif;">
     <h2 style="font-size: 38px; margin-bottom: 15px;">Contact Us</h2>
     <p style="font-size: 18px; margin-bottom: 40px; color: #555;">Connect with Nancy Kansal on social media or send a message directly!</p>
 
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
       <!-- Instagram -->
       <a href="https://www.instagram.com/nancykansal.nk/" target="_blank" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#E1306C; display:flex; align-items:center; justify-content:center;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#E1306C; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
           <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style="width:30px; height:30px;">
         </div>
       </a>
 
       <!-- Facebook -->
       <a href="https://www.facebook.com/share/1BmPn8YfBd/" target="_blank" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#3b5998; display:flex; align-items:center; justify-content:center;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#3b5998; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" style="width:30px; height:30px;">
         </div>
       </a>
 
       <!-- Gmail -->
       <a href="mailto:nancykansal.nk@gmail.com" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#D44638; display:flex; align-items:center; justify-content:center;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#D44638; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
           <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" style="width:30px; height:30px;">
         </div>
       </a>
 
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/nancy-kansal-8b4b312b7" target="_blank" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#0077b5; display:flex; align-items:center; justify-content:center;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#0077b5; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
           <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width:30px; height:30px;">
-        </div>
-      </a>
-
-      <!-- X -->
-      <a href="https://x.com/nancykansal15?s=21" target="_blank" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#1DA1F2; display:flex; align-items:center; justify-content:center;">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path d="M23.954 4.569a10 10 0 0 1-2.825.775 4.932 4.932 0 0 0 2.163-2.723 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.94 13.94 0 0 1 1.671 3.149a4.822 4.822 0 0 0-.666 2.475c0 1.708.869 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616v.06a4.924 4.924 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.224.085 4.928 4.928 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.104c-.395 0-.779-.023-1.158-.067a13.945 13.945 0 0 0 7.557 2.212c9.054 0 14.002-7.496 14.002-13.986 0-.21 0-.423-.015-.634a9.935 9.935 0 0 0 2.457-2.548l.002-.003z"/>
-          </svg>
         </div>
       </a>
 
       <!-- WhatsApp -->
       <a href="https://wa.me/919996119746" target="_blank" style="text-decoration: none;">
-        <div style="width:60px; height:60px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center;">
+        <div style="width:60px; height:60px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; transition: transform 0.3s, box-shadow 0.3s;">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:30px; height:30px;">
         </div>
       </a>
     </div>
-
-    <p style="margin-top: 40px; font-size: 16px; color: #555;">
-      Or send a direct message to <a href="mailto:nancykansal.nk@gmail.com" style="color: #D44638;">nancykansal.nk@gmail.com</a>
-    </p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 Expand Empire With Nancy | All Rights Reserved</p>
   </footer>
+
+  <!-- Accordion Script -->
+  <script>
+    const acc = document.querySelectorAll(".accordion-btn");
+    acc.forEach(btn => {
+      btn.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
 </body>
 </html>
