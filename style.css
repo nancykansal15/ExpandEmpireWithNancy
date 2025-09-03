@@ -61,35 +61,18 @@ header p {
 }
 
 /* About Section */
-.about {
+#about {
   padding: 50px 20px;
   text-align: center;
   background: #fff;
 }
-.about h2 {
+#about h2 {
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #002855;
 }
-.about-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.about-card {
-  background: #f9f9f9;
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-.about-card:hover {
-  transform: translateY(-8px);
-}
-.about-card .icon {
-  font-size: 2rem;
+#about p {
+  font-size: 1.1rem;
 }
 
 /* Courses Section */
@@ -103,50 +86,31 @@ header p {
   margin-bottom: 30px;
   color: #002855;
 }
-.accordion {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
-.accordion-item {
-  margin-bottom: 15px;
-  border-radius: 8px;
-  overflow: hidden;
+.course-card {
   background: white;
+  border-radius: 10px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.accordion-btn {
-  background: #002855;
-  color: white;
-  padding: 15px;
-  width: 100%;
-  border: none;
+  transition: transform 0.3s;
   text-align: left;
-  font-size: 1.1rem;
-  cursor: pointer;
-  outline: none;
-  transition: background 0.3s;
 }
-.accordion-btn:hover {
-  background: #003f7f;
+.course-card:hover {
+  transform: translateY(-8px);
 }
-.accordion-btn.active {
-  background: #ffcc00;
+.course-card h3 {
   color: #002855;
-}
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  background: #f9f9f9;
-  transition: max-height 0.4s ease;
-  padding: 0 15px;
-}
-.accordion-content ul {
-  padding: 15px 20px;
-  margin: 0;
-}
-.accordion-content li {
   margin-bottom: 10px;
+}
+.course-card ul {
+  padding-left: 20px;
+}
+.course-card li {
+  margin-bottom: 8px;
 }
 
 /* Contact Section */
@@ -185,4 +149,3 @@ footer {
   padding: 15px;
   margin-top: 20px;
 }
-
