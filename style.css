@@ -1,166 +1,188 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body */
+/* General Styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
-  color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  overflow-x: hidden;
+  background: #f4f8fb;
+  color: #333;
 }
 
 /* Navigation */
 nav {
-  background: #111;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background: #002855;
+  padding: 15px;
+  text-align: center;
 }
-
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s ease;
 }
-
 nav a:hover {
-  color: #f39c12;
+  color: #ffcc00;
 }
 
 /* Hero Section */
 header {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1508780709619-79562169bc64?w=1600") no-repeat center/cover;
+  background: linear-gradient(to right, #003f7f, #002855);
   color: white;
   text-align: center;
-  padding: 120px 20px;
-}
-
-.hero-title {
-  font-size: 42px;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-header p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn {
-  background: #f39c12;
-  color: white;
-  padding: 12px 25px;
-  margin: 8px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #d35400;
-}
-
-.btn.whatsapp {
-  background: #25D366;
-}
-
-.btn.whatsapp:hover {
-  background: #128C7E;
-}
-
-/* Section Titles */
-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 34px;
-  color: #222;
-}
-
-/* About & Courses */
-.about {
   padding: 60px 20px;
 }
-
-.about-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.btn {
+  background: #ffcc00;
+  color: #002855;
+  padding: 12px 25px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+}
+.btn:hover {
+  background: #ffaa00;
+}
+.whatsapp {
+  background: #25d366;
+  color: white;
+}
+.whatsapp:hover {
+  background: #1da851;
 }
 
-.about-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+/* About Section */
+.about {
+  padding: 50px 20px;
   text-align: center;
-  transition: transform 0.3s ease;
+  background: #fff;
 }
-
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #002855;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.about-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
 .about-card:hover {
   transform: translateY(-8px);
 }
-
 .about-card .icon {
-  font-size: 35px;
+  font-size: 2rem;
+}
+
+/* Courses Section */
+#courses {
+  padding: 50px 20px;
+  background: #f4f8fb;
+  text-align: center;
+}
+#courses h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #002855;
+}
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.accordion-item {
   margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
-.about-card h3 {
-  font-size: 22px;
-  margin-bottom: 12px;
-  color: #f39c12;
+.accordion-btn {
+  background: #002855;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
 }
-
-.about-card p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
+.accordion-btn:hover {
+  background: #003f7f;
+}
+.accordion-btn.active {
+  background: #ffcc00;
+  color: #002855;
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f9f9f9;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;
+}
+.accordion-content ul {
+  padding: 15px 20px;
+  margin: 0;
+}
+.accordion-content li {
+  margin-bottom: 10px;
 }
 
 /* Contact Section */
 #contact {
-  padding: 60px 20px;
-  background: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+  background: white;
 }
-
 #contact h2 {
-  color: #222;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #002855;
 }
-
-#contact p {
-  color: #555;
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
-#contact a div {
-  transition: transform 0.3s ease;
+.social-links img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
-#contact a div:hover {
-  transform: scale(1.1);
+.social-links img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 /* Footer */
 footer {
-  background: #111;
-  color: #fff;
+  background: #002855;
+  color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
+  padding: 15px;
+  margin-top: 20px;
 }
+
