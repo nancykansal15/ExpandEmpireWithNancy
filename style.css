@@ -232,3 +232,30 @@ footer {
   color: red;
   font-weight: bold;
 }
+
+.freebies {
+  padding: 50px 20px;
+  background: #fff3e0; /* light attention-grabbing background */
+  text-align: center;
+}
+
+.freebies h2 {
+  font-size: 2rem;
+  color: #ff6600; /* highlight color */
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.freebies-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.freebies-list li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #002855;
+  font-weight: bold;
+}
