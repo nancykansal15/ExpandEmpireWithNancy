@@ -1,4 +1,12 @@
 /* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -13,12 +21,14 @@ nav {
   padding: 15px;
   text-align: center;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
 }
+
 nav a:hover {
   color: #ffcc00;
 }
@@ -30,15 +40,18 @@ header {
   text-align: center;
   padding: 60px 20px;
 }
+
 .hero-title {
   font-size: 2.5rem;
   margin-bottom: 15px;
   letter-spacing: 2px;
 }
+
 header p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+
 .btn {
   background: #ffcc00;
   color: #002855;
@@ -48,14 +61,19 @@ header p {
   font-weight: bold;
   border-radius: 5px;
   display: inline-block;
+  border: none;
+  cursor: pointer;
 }
+
 .btn:hover {
   background: #ffaa00;
 }
+
 .whatsapp {
   background: #25d366;
   color: white;
 }
+
 .whatsapp:hover {
   background: #1da851;
 }
@@ -63,33 +81,28 @@ header p {
 /* About Section */
 .about {
   padding: 50px 20px;
-  text-align: center;
   background: #fff;
+  text-align: center;
 }
+
 .about h2 {
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #002855;
 }
-.about-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+
+.about-text {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #002855;
+  font-weight: bold; /* Entire paragraph bold */
 }
-.about-card {
-  background: #f9f9f9;
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-.about-card:hover {
-  transform: translateY(-8px);
-}
-.about-card .icon {
-  font-size: 2rem;
+
+.highlight-red {
+  color: red;
+  font-weight: bold;
 }
 
 /* Courses Section */
@@ -98,6 +111,7 @@ header p {
   background: #f4f8fb;
   text-align: center;
 }
+
 #courses h2 {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -146,93 +160,7 @@ header p {
   margin-bottom: 8px;
 }
 
-/* Contact Section */
-#contact {
-  padding: 50px 20px;
-  text-align: center;
-  background: white;
-}
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #002855;
-}
-.social-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.social-links img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.social-links img:hover {
-  transform: scale(1.15);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-/* Footer */
-footer {
-  background: #002855;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-.about {
-  padding: 50px 20px;
-  background: #fff;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #002855;
-}
-
-.about {
-  padding: 50px 20px;
-  background: #fff;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #002855;
-}
-
-.about {
-  padding: 50px 20px;
-  background: #fff;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #002855;
-}
-
-.about-text {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-  color: #002855;
-  font-weight: bold; /* Entire paragraph bold */
-}
-
-.highlight-red {
-  color: red;
-  font-weight: bold;
-}
-
+/* Freebies Section */
 .freebies {
   padding: 50px 20px;
   background: #fff3e0; /* light attention-grabbing background */
@@ -257,5 +185,63 @@ footer {
   font-size: 1.2rem;
   margin-bottom: 15px;
   color: #002855;
-  font-weight: bold;
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+  background: white;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #002855;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #002855;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .courses-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+  }
 }
