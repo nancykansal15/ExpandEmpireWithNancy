@@ -399,3 +399,35 @@ footer {
     font-size: 1.9rem;
   }
 }
+/* ===== NEW ABOUT SECTIONS (STACKED) ===== */
+
+.about-section {
+  padding: 60px 8%;
+}
+
+.about-work {
+  background: #ffffff;
+}
+
+.about-course {
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+}
+
+.about-section-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #002855;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
