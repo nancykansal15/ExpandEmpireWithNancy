@@ -1,244 +1,184 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Expand Empire With Nancy</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">Expand Empire <span>With Nancy</span></div>
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#courses">Courses</a>
-      <a href="#testimonials">Results</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #111;
+}
 
-  <!-- HERO -->
-  <header id="home" class="hero">
-    <div class="hero-content">
-      <h1>Turn Your Social Media Into an Income Machine</h1>
-      <p>
-        Learn how to build a <b>profitable personal brand</b>, run
-        <b>high-converting Meta Ads</b>, and start earning from home — even if
-        you're just getting started.
-      </p>
-      <div class="hero-actions">
-        <a href="https://forms.gle/z57iJZKhzG6MLKJp9" target="_blank" class="btn primary">
-          Join the Journey
-        </a>
-        <a href="https://wa.me/919996119746" target="_blank" class="btn outline">
-          Talk to Nancy
-        </a>
-      </div>
-      <p class="hero-note">No required your experience. Just your phone/Laptop, internet & the hunger to grow.</p>
-    </div>
-  </header>
-    <!-- ABOUT THE WORK -->
-  <section id="about" class="about-section about-work">
-    <div class="about-section-inner">
-      <h2>About the Work</h2>
-      <p>
-        At <b>Expand Empire With Nancy</b>, you learn how to turn your
-        <b>social media into a money-making asset</b>.
-        Using a clear & simple system, you can start earning
-        <b>₹30,000 – ₹40,000 per month</b> from home through digital
-        marketing, content and smart online strategies.
-      </p>
-    </div>
-  </section>
+/* NAVBAR */
+.navbar {
+  background: #000;
+  color: #fff;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  <!-- ABOUT THE COURSE -->
-  <section id="about-course" class="about-section about-course">
-    <div class="about-section-inner">
-      <h2>About the Course</h2>
-      <p>
-        This course is a <b>step-by-step roadmap</b> to build a profitable online presence.
-        You learn <b>content creation, personal branding and Meta Ads</b> so that you can
-        attract the right audience and convert them into paying clients — even if you are
-        starting from scratch as a <b>student, working professional or homemaker</b>.
-      </p>
-    </div>
-  </section>
-  <!-- WHY CHOOSE US -->
-  <section class="section why">
-    <h2 class="section-title">Why Learn With Nancy?</h2>
-    <div class="why-grid">
-      <div class="why-card">
-        <h3>Practical, Not Just Theory</h3>
-        <p>Everything is taught with live examples, real campaigns and ready-to-use templates.</p>
-      </div>
-      <div class="why-card">
-        <h3>Beginner Friendly</h3>
-        <p>No prior experience needed. You start from basics and build step by step.</p>
-      </div>
-      <div class="why-card">
-        <h3>Mentorship & Support</h3>
-        <p>Get guidance, Q&A support and a community that pushes you to grow.</p>
-      </div>
-      <div class="why-card">
-        <h3>Income Focused</h3>
-        <p>Every module is designed to help you start and scale your income, not just learn theory.</p>
-      </div>
-    </div>
-  </section>
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
-  <!-- COURSES / OFFERS -->
-  <section id="courses" class="section">
-    <h2 class="section-title">What You Get Inside</h2>
-    <div class="courses-container">
-      <div class="course-card">
-        <span class="icon">🚀</span>
-        <h3>Meta Ads Bootcamp</h3>
-        <ul>
-          <li>Ad account & campaign setup</li>
-          <li>Targeting & retargeting secrets</li>
-          <li>Winning creatives & copy</li>
-          <li>Scaling profitable campaigns</li>
-        </ul>
-      </div>
+.logo span {
+  color: #ffcc00;
+}
 
-      <div class="course-card">
-        <span class="icon">🎥</span>
-        <h3>Content & Branding</h3>
-        <ul>
-          <li>Reels & content strategy</li>
-          <li>Magnetic personal brand</li>
-          <li>Storytelling that sells</li>
-          <li>Profile optimization</li>
-        </ul>
-      </div>
+.nav-links a {
+  color: #fff;
+  margin-left: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-      <div class="course-card">
-        <span class="icon">🎯</span>
-        <h3>Lead & Sales System</h3>
-        <ul>
-          <li>Lead generation funnels</li>
-          <li>DM & WhatsApp closing</li>
-          <li>Follow-up frameworks</li>
-          <li>Simple automation tools</li>
-        </ul>
-      </div>
+.nav-links a:hover {
+  color: #ffcc00;
+}
 
-      <div class="course-card">
-        <span class="icon">🌟</span>
-        <h3>Mentorship & Community</h3>
-        <ul>
-          <li>Live calls & Q&A</li>
-          <li>Accountability support</li>
-          <li>Growth-focused community</li>
-          <li>Lifetime access to updates</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+/* HERO */
+.hero {
+  position: relative;
+  height: 75vh;
+  background: url("hero.jpg") center/cover no-repeat;
+}
 
-  <!-- STATS / NUMBERS -->
-  <section class="section stats">
-    <div class="stats-grid">
-      <div class="stat">
-        <h3>500+</h3>
-        <p>Students Trained</p>
-      </div>
-      <div class="stat">
-        <h3>₹30k–₹1L+</h3>
-        <p>Student Monthly Earnings</p>
-      </div>
-      <div class="stat">
-        <h3>3+</h3>
-        <p>Years of Experience</p>
-      </div>
-      <div class="stat">
-        <h3>24/7</h3>
-        <p>Community Support</p>
-      </div>
-    </div>
-  </section>
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials" class="section testimonials">
-    <h2 class="section-title">Student Results</h2>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <p>“I started with zero knowledge and within 2 months I closed my first 35k client from Instagram.”</p>
-        <h4>– Aditi, College Student</h4>
-      </div>
-      <div class="testi-card">
-        <p>“Meta ads module alone helped me get 3 new clients for my freelance work. Totally worth it.”</p>
-        <h4>– Rahul, Freelancer</h4>
-      </div>
-      <div class="testi-card">
-        <p>“As a homemaker, this course gave me confidence and a clear roadmap to earn from home.”</p>
-        <h4>– Pooja, Homemaker</h4>
-      </div>
-    </div>
-  </section>
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding-top: 120px;
+  color: #fff;
+  max-width: 800px;
+  margin: auto;
+}
 
-  <!-- FAQ -->
-  <section id="faq" class="section faq">
-    <h2 class="section-title">Frequently Asked Questions</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <h3>Do I need any prior experience?</h3>
-        <p>No. The course starts from basics and takes you step-by-step to advanced level.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Can I learn using just my phone?</h3>
-        <p>Yes. Most content can be learned from your phone. For running ads, a laptop is recommended but not compulsory in the beginning.</p>
-      </div>
-      <div class="faq-item">
-        <h3>How much time do I need daily?</h3>
-        <p>1–2 focused hours per day are enough if you are consistent and implement what you learn.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Is there any support if I get stuck?</h3>
-        <p>Yes. You get mentorship, doubt solving and community support so you never feel stuck alone.</p>
-      </div>
-    </div>
-  </section>
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
 
-  <!-- CALL TO ACTION -->
-  <section class="section cta">
-    <h2>Ready to Start Your Online Income Journey?</h2>
-    <p>Fill out the form and join the community of action-takers building their own digital empire.</p>
-    <a href="https://forms.gle/z57iJZKhzG6MLKJp9" target="_blank" class="btn primary">
-      Apply Now
-    </a>
-  </section>
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
 
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-    <h2 class="section-title">Contact</h2>
-    <p>Connect with Nancy on social media or drop an email.</p>
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 
-    <div class="social-links">
-      <a href="https://www.instagram.com/nancykansal.nk/" target="_blank">Instagram</a>
-      <a href="https://x.com/nancykansal15?s=21" target="_blank">X (Twitter)</a>
-      <a href="https://www.linkedin.com/in/nancy-kansal-8b4b312b7" target="_blank">LinkedIn</a>
-    </div>
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #ffcc00;
+}
 
-    <p class="email-line">
-      Or email at
-      <a href="mailto:nancykansal.nk@gmail.com">nancykansal.nk@gmail.com</a>
-    </p>
-  </section>
+.primary {
+  background: #ffcc00;
+  color: #000;
+}
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Expand Empire With Nancy · All Rights Reserved</p>
-  </footer>
+.outline {
+  background: transparent;
+  color: #ffcc00;
+}
 
-  <!-- STICKY WHATSAPP BUTTON -->
-  <a href="https://wa.me/919996119746" target="_blank" class="whatsapp-float">
-    💬
-  </a>
+/* SECTIONS */
+.section {
+  padding: 70px 8%;
+}
 
-</body>
-</html>
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.center-text {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* COURSES */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.course-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* TESTIMONIALS */
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.testi-card {
+  background: #fff;
+  padding: 20px;
+  border-left: 4px solid #ffcc00;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+/* FAQ */
+.faq-item {
+  max-width: 700px;
+  margin: 18px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* CONTACT */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+
+.social-links a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
