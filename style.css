@@ -55,8 +55,7 @@ body {
 .hero {
   height: 88vh;
   background: url("images/hero-nancy.png") center top/cover no-repeat;
-}
-position: relative;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,3 +331,29 @@ footer {
 
   .hero {
     height:
+    /* 🔥 MILESTONE SECTION */
+
+.milestones-section {
+  background: linear-gradient(135deg, #002855, #004080);
+  padding: 80px 8%;
+}
+
+.milestone-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.milestone-box h3 {
+  font-size: 48px;
+  color: #ffcc00;
+  margin: 0;
+}
+
+.milestone-box p {
+  color: white;
+  margin-top: 10px;
+  font-size: 16px;
+}
