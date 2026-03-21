@@ -53,8 +53,8 @@ body {
 
 /* HERO */
 .hero {
-  height: 100vh;
-  background: url("images/hero-nancy.png") center center/cover no-repeat;
+  height: 88vh;
+  background: url("images/hero-nancy.png") center top/cover no-repeat;
 }
 position: relative;
   display: flex;
